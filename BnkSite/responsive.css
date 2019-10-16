@@ -1,0 +1,33 @@
+
+
+@media (max-width: 576px) { 
+    .headColor{
+        height: 80px;
+        
+    }
+   
+
+}
+
+@media (min-width: 576px) { 
+    
+
+}
+
+@media (min-width: 768px) {
+    .headColor{
+        height: 70px;
+    }
+ }
+
+@media (min-width: 992px) { 
+    /* .headColor{
+        height: 70px;
+    } */
+}
+
+@media (min-width: 1200px) { 
+    /* .headColor{
+        height: 70px;
+    } */
+}

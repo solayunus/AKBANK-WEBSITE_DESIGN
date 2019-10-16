@@ -1,0 +1,37 @@
+
+
+@media (max-width: 576px) { 
+    .headColor{
+        height: 80px;
+        
+    }
+   
+
+}
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  } 
+  
+
+@media (min-width: 576px) { 
+    
+
+}
+
+@media (min-width: 768px) {
+    .headColor{
+        height: 70px;
+    }
+ }
+
+@media (min-width: 992px) { 
+    /* .headColor{
+        height: 70px;
+    } */
+}
+
+@media (min-width: 1200px) { 
+    /* .headColor{
+        height: 70px;
+    } */
+}

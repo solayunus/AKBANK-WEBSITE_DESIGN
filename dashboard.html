@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="theme.css"> 
+<!-- Referenced outsource css -->
+    <link rel="stylesheet" href="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="assets/vendor/themify-icons/themify-icons.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/28bb811612.js"></script>
+</head>
+<body>
+    <header >
+        <div class="row allheader" >
+            <div class="col-md-2 pl-5 pt-3 header-left">
+                <div id="centerIcon">
+                        <a href="#">
+                                <img src="images/logo-mini.svg">
+                                <img src="images/logo-text-light.svg">
+                        </a>
+                </div>
+
+            </div>
+            <div class="list-group list-group-horizontal col-md-10 header-right">
+                         <div class="list-group-item "><i class="contentcolor fas fa-bars"></i></div>
+                         <div class=" list-group-item col-md-7">
+                                
+                                  <button class="btn" type="button" id="button-addon1"><i class="contentcolor fas fa-search"></i></button>
+                            
+                                <input type="text" class="pl-4 contentcolor" style="border: none; width: 80%; " placeholder="Type here to search" >
+                         </div>
+                         <div class=" list-group-item"><i class="mt-2 fa contentcolor">&#xf0e0;</i>  </div>
+                         <div class=" list-group-item ">
+                             <a href="#"><i  class="mt-2 fa contentcolor">&#xf0f3;</i> </a> </div>
+                         <div class=" list-group-item"><i  class="contentcolor mt-2 fa ">&#xf00a;</i>  </div>
+                        
+                            <div class="list-group-item col-md-3"  > 
+                                   <a href="#"> <img src="images/img2.jpg" class=" mr-5 rounded-circle" style="height:40px ;" alt="Cinque Terre">
+                               <span class="contentcolor"> Bruce Goodman</span></a>
+                    
+                            </div>
+               
+            </div>
+        </div>
+    </header>
+
+    <main>
+      <div class="row">
+             <div class="col-md-2 pt-3 header-left ">
+                <!-- <ul class="list-group lstyle header-left">
+                     <li class="list-group-item "><a href="#">
+                         <span> </span>
+                         <span> Dashboard</span>
+                     </a></li>
+                     <li class="list-group-item "> <a href="#">
+                        span> </span>
+                         <span> UI Base</span> 
+                        </a></li>
+                     <li class="list-group-item"> <a href="#">
+                         span> </span>
+                         <span>  UI Components</span>
+                       </a></li>
+                     <li class="list-group-item"> <a href="#">
+                        span> </span>
+                         <span>Forms</span> 
+                        </a></li>
+                     <li class="list-group-item"> <a href="#">
+                        span> </span>
+                         <span>Tables</span> 
+                        </a></li>
+                     <li class="list-group-item"> <a href="#">
+                        span> </span>
+                         <span>Account Page</span> 
+                        </a></li>
+                     <li class="list-group-item">
+                        span> </span>
+                         <span> Dashboard</span> 
+                      </li>
+                     <li class="list-group-item ">Free Downloads</li>
+                </ul> -->
+                <nav class="u-sidebar-nav">
+                    <!-- Sidebar Nav Menu -->
+                    <ul class="u-sidebar-nav-menu u-sidebar-nav-menu--top-level">
+                        <!-- Dashboard -->
+                        <li class="u-sidebar-nav-menu__item">
+                            <a class="u-sidebar-nav-menu__link active" href="index.html">
+                                <span class="ti-dashboard u-sidebar-nav-menu__item-icon"></span>
+                                <span class="u-sidebar-nav-menu__item-title">Dashboard</span>
+                            </a>
+                        </li>
+                        <!-- End Dashboard -->
+
+                        <!-- UI Base -->
+                        <li class="u-sidebar-nav-menu__item">
+                            <a class="u-sidebar-nav-menu__link" href="#" data-target="#menuItemUIBase">
+                                <span class="ti-paint-roller u-sidebar-nav-menu__item-icon"></span>
+                                <span class="u-sidebar-nav-menu__item-title">UI Base</span>
+                                <span class="ti-angle-down u-sidebar-nav-menu__item-arrow"></span>
+                            </a>
+
+                            <ul id="menuItemUIBase" class="u-sidebar-nav-menu u-sidebar-nav-menu--second-level" style="display: none;">
+                                <!-- Colors -->
+                                <li class="u-sidebar-nav-menu__item">
+                                    <a class="u-sidebar-nav-menu__link" href="ui-colors.html">
+                                        <span class="u-sidebar-nav-menu__item-icon">C</span>
+                                        <span class="u-sidebar-nav-menu__item-title">Colors</span>
+                                    </a>
+                                </li>
+                                <!-- End Colors -->
+
+                                <!-- Typography -->
+                                <li class="u-sidebar-nav-menu__item">
+                                    <a class="u-sidebar-nav-menu__link" href="ui-typography.html">
+                                        <span class="u-sidebar-nav-menu__item-icon">T</span>
+                                        <span class="u-sidebar-nav-menu__item-title">Typography</span>
+                                    </a>
+                                </li>
+                                <!-- End Typography -->
+                            </ul>
+                        </li>
+                        <!-- End UI Base -->
+
+                        <!-- UI Components -->
+                        <li class="u-sidebar-nav-menu__item">
+                            <a class="u-sidebar-nav-menu__link" href="#" data-target="#menuItemUIComponents">
+                                <span class="ti-panel u-sidebar-nav-menu__item-icon"></span>
+                                <span class="u-sidebar-nav-menu__item-title">UI Components</span>
+                                <span class="ti-angle-down u-sidebar-nav-menu__item-arrow"></span>
+                            </a>
+
+                            <ul id="menuItemUIComponents" class="u-sidebar-nav-menu u-sidebar-nav-menu--second-level" style="display: none;">
+                                <!-- Alerts -->
+                                <li class="u-sidebar-nav-menu__item">
+                                    <a class="u-sidebar-nav-menu__link" href="ui-alerts.html">
+                                        <span class="u-sidebar-nav-menu__item-icon">A</span>
+                                        <span class="u-sidebar-nav-menu__item-title">Alerts</span>
+                                    </a>
+                                </li>
+                                <!-- End Alerts -->
+
+                                <!-- Buttons -->
+                                <li class="u-sidebar-nav-menu__item">
+                                    <a class="u-sidebar-nav-menu__link" href="ui-buttons.html">
+                                        <span class="u-sidebar-nav-menu__item-icon">B</span>
+                                        <span class="u-sidebar-nav-menu__item-title">Buttons</span>
+                                    </a>
+                                </li>
+                                <!-- End Buttons -->
+
+                                <!-- Cards -->
+                                <li class="u-sidebar-nav-menu__item">
+                                    <a class="u-sidebar-nav-menu__link" href="ui-cards.html">
+                                        <span class="u-sidebar-nav-menu__item-icon">C</span>
+                                        <span class="u-sidebar-nav-menu__item-title">Cards</span>
+                                    </a>
+                                </li>
+                                <!-- End Cards -->
+
+                                <!-- Modals -->
+                                <li class="u-sidebar-nav-menu__item">
+                                    <a class="u-sidebar-nav-menu__link" href="ui-modals.html">
+                                        <span class="u-sidebar-nav-menu__item-icon">M</span>
+                                        <span class="u-sidebar-nav-menu__item-title">Modals</span>
+                                    </a>
+                                </li>
+                                <!-- End Modals -->
+
+                                <!-- Tooltips & Popovers -->
+                                <li class="u-sidebar-nav-menu__item">
+                                    <a class="u-sidebar-nav-menu__link" href="ui-tooltips-and-popovers.html">
+                                        <span class="u-sidebar-nav-menu__item-icon">T</span>
+                                        <span class="u-sidebar-nav-menu__item-title">Tooltips &amp; Popovers</span>
+                                    </a>
+                                </li>
+                                <!-- End Tooltips & Popovers -->
+
+                                <!-- Spinners -->
+                                <li class="u-sidebar-nav-menu__item">
+                                    <a class="u-sidebar-nav-menu__link" href="ui-spinners.html">
+                                        <span class="u-sidebar-nav-menu__item-icon">S</span>
+                                        <span class="u-sidebar-nav-menu__item-title">Spinners</span>
+                                    </a>
+                                </li>
+                                <!-- End Spinners -->
+
+                                <!-- Other -->
+                                <li class="u-sidebar-nav-menu__item">
+                                    <a class="u-sidebar-nav-menu__link" href="ui-others.html">
+                                        <span class="u-sidebar-nav-menu__item-icon">O</span>
+                                        <span class="u-sidebar-nav-menu__item-title">Other Components</span>
+                                    </a>
+                                </li>
+                                <!-- End Other -->
+                            </ul>
+                        </li>
+                        <!-- End UI Components -->
+
+                        <!-- Forms -->
+                        <li class="u-sidebar-nav-menu__item">
+                            <a class="u-sidebar-nav-menu__link" href="forms.html">
+                                <span class="ti-pencil-alt u-sidebar-nav-menu__item-icon"></span>
+                                <span class="u-sidebar-nav-menu__item-title">Forms</span>
+                            </a>
+                        </li>
+                        <!-- End Forms -->
+
+                        <!-- Tables -->
+                        <li class="u-sidebar-nav-menu__item">
+                            <a class="u-sidebar-nav-menu__link" href="tables.html">
+                                <span class="ti-layout u-sidebar-nav-menu__item-icon"></span>
+                                <span class="u-sidebar-nav-menu__item-title">Tables</span>
+                            </a>
+                        </li>
+                        <!-- End Tables -->
+
+                        <!-- Account Pages -->
+                        <li class="u-sidebar-nav-menu__item">
+                            <a class="u-sidebar-nav-menu__link" href="#" data-target="#menuItemAccountPages">
+                                <span class="ti-layers-alt u-sidebar-nav-menu__item-icon"></span>
+                                <span class="u-sidebar-nav-menu__item-title">Account Pages</span>
+                                <span class="ti-angle-down u-sidebar-nav-menu__item-arrow"></span>
+                            </a>
+
+                            <ul id="menuItemAccountPages" class="u-sidebar-nav-menu u-sidebar-nav-menu--second-level" style="display: none;">
+                                <!-- Profile -->
+                                <li class="u-sidebar-nav-menu__item">
+                                    <a class="u-sidebar-nav-menu__link" href="account-profile.html">
+                                        <span class="u-sidebar-nav-menu__item-icon">P</span>
+                                        <span class="u-sidebar-nav-menu__item-title">Profile</span>
+                                    </a>
+                                </li>
+                                <!-- End Colors -->
+
+                                <!-- Sign Up -->
+                                <li class="u-sidebar-nav-menu__item">
+                                    <a class="u-sidebar-nav-menu__link" href="account-sign-up.html" target="_blank">
+                                        <span class="u-sidebar-nav-menu__item-icon">S</span>
+                                        <span class="u-sidebar-nav-menu__item-title">Sign Up</span>
+                                    </a>
+                                </li>
+                                <!-- End Sign Up -->
+
+                                <!-- Sign In -->
+                                <li class="u-sidebar-nav-menu__item">
+                                    <a class="u-sidebar-nav-menu__link" href="account-sign-in.html" target="_blank">
+                                        <span class="u-sidebar-nav-menu__item-icon">S</span>
+                                        <span class="u-sidebar-nav-menu__item-title">Sign In</span>
+                                    </a>
+                                </li>
+                                <!-- End Sign In -->
+
+                                <!-- Recover Password -->
+                                <li class="u-sidebar-nav-menu__item">
+                                    <a class="u-sidebar-nav-menu__link" href="account-password-recover.html" target="_blank">
+                                        <span class="u-sidebar-nav-menu__item-icon">R</span>
+                                        <span class="u-sidebar-nav-menu__item-title">Recover Password</span>
+                                    </a>
+                                </li>
+                                <!-- End Recover Password -->
+                            </ul>
+                        </li>
+                        <!-- End Account Pages -->
+
+                        <!-- Other Pages -->
+                        <li class="u-sidebar-nav-menu__item">
+                            <a class="u-sidebar-nav-menu__link" href="#" data-target="#menuItemOtherPages">
+                                <span class="ti-user u-sidebar-nav-menu__item-icon"></span>
+                                <span class="u-sidebar-nav-menu__item-title">Other Pages</span>
+                                <span class="ti-angle-down u-sidebar-nav-menu__item-arrow"></span>
+                            </a>
+
+                            <ul id="menuItemOtherPages" class="u-sidebar-nav-menu u-sidebar-nav-menu--second-level" style="display: none;">
+                                <!-- Blank -->
+                                <li class="u-sidebar-nav-menu__item">
+                                    <a class="u-sidebar-nav-menu__link" href="blank.html">
+                                        <span class="u-sidebar-nav-menu__item-icon">B</span>
+                                        <span class="u-sidebar-nav-menu__item-title">Blank</span>
+                                    </a>
+                                </li>
+                                <!-- End Blank -->
+
+                                <!-- Blank -->
+                                <li class="u-sidebar-nav-menu__item">
+                                    <a class="u-sidebar-nav-menu__link" href="404.html" target="_blank">
+                                        <span class="u-sidebar-nav-menu__item-icon">E</span>
+                                        <span class="u-sidebar-nav-menu__item-title">Error 404</span>
+                                    </a>
+                                </li>
+                                <!-- End Blank -->
+
+                                <!-- Blank -->
+                                <li class="u-sidebar-nav-menu__item">
+                                    <a class="u-sidebar-nav-menu__link" href="500.html" target="_blank">
+                                        <span class="u-sidebar-nav-menu__item-icon">E</span>
+                                        <span class="u-sidebar-nav-menu__item-title">Error 500</span>
+                                    </a>
+                                </li>
+                                <!-- End Blank -->
+                            </ul>
+                        </li>
+                        <!-- End Other Pages -->
+
+                        <li class="u-sidebar-nav-menu__divider"></li>
+
+                        <!-- Documentation -->
+                        <li class="u-sidebar-nav-menu__item">
+                            <a class="u-sidebar-nav-menu__link" href="documentation/index.html" target="_blank">
+                                <span class="ti-files u-sidebar-nav-menu__item-icon"></span>
+                                <span class="u-sidebar-nav-menu__item-title">Documentation</span>
+                            </a>
+                        </li>
+                        <!-- End Documentation -->
+
+                        <!-- Free Download -->
+                        <li class="u-sidebar-nav-menu__item">
+                            <a class="u-sidebar-nav-menu__link" href="../../templates/awesome-dashboard-ui-kit.html" target="_blank">
+                                <span class="ti-save u-sidebar-nav-menu__item-icon"></span>
+                                <span class="u-sidebar-nav-menu__item-title">Free Download</span>
+                            </a>
+                        </li>
+                        <!-- End Free Download -->
+                    </ul>
+                    <!-- End Sidebar Nav Menu -->
+                </nav>
+            </div >
+            <div class="col-md-10 body-right">
+                <div class="u-content">
+                    <!-- Content Body -->
+                    <div class="u-body">
+                        <!-- Doughnut Chart -->
+                        <div class="row">
+                            <div class="col-sm-6 col-xl-3 mb-5">
+                                <!-- Card -->
+                                <div class="card">
+                                    <!-- Card Body -->
+                                    <div class="card-body">
+                                        <!-- Chart with Info -->
+                                        <div class="media align-items-center py-2">
+                                            <!-- Chart with Info - Info -->
+                                            <div class="media-body">
+                                                <h5 class="h5 text-muted mb-2">Total Budget</h5>
+                                                <span class="h2 font-weight-normal mb-0">$162,400</span>
+                                            </div>
+                                            <!-- End Chart with Info - Info -->
+    
+                                            <!-- Chart with Info - Chart -->
+                                            <div class="text-right ml-2" style="max-width: 70px;">
+                                                <div class="mb-2"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                                                    <canvas class="js-area-chart-small chartjs-render-monitor initialized" width="70" height="14" data-extend="[{
+                                                                        &quot;data&quot;: [20, 0, 40, 40, 100, 60, 100, 90, 80],
+                                      &quot;borderColor&quot;: &quot;#444bf8&quot;
+                                                                    }]" style="display: block; width: 70px; height: 14px;"></canvas>
+                                                </div>
+    
+                                                <span class="text-success">
+                                                    +5.2%
+                                                    <span class="ti-arrow-up"></span>
+                                                </span>
+                                            </div>
+                                            <!-- End Chart with Info - Chart -->
+                                        </div>
+                                        <!-- End Chart with Info -->
+                                    </div>
+                                    <!-- End Card Body -->
+                                </div>
+                                <!-- End Card -->
+                            </div>
+    
+                            <div class="col-sm-6 col-xl-3 mb-5">
+                                <!-- Card -->
+                                <div class="card">
+                                    <!-- Card Body -->
+                                    <div class="card-body">
+                                        <!-- Chart with Info -->
+                                        <div class="media align-items-center py-2">
+                                            <!-- Chart with Info - Info -->
+                                            <div class="media-body">
+                                                <h5 class="h5 text-muted mb-2">Total sales</h5>
+                                                <span class="h2 font-weight-normal mb-0">$48,800</span>
+                                            </div>
+                                            <!-- End Chart with Info - Info -->
+    
+                                            <!-- Chart with Info - Chart -->
+                                            <div class="text-right ml-2" style="max-width: 70px;">
+                                                <div class="mb-2"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                                                    <canvas class="js-area-chart-small chartjs-render-monitor initialized" width="70" height="14" data-extend="[{
+                                                                        &quot;data&quot;: [90, 80, 100, 40, 40, 0, 20, 10, 30],
+                                      &quot;borderColor&quot;: &quot;#2cd2f6&quot;
+                                                                    }]" style="display: block; width: 70px; height: 14px;"></canvas>
+                                                </div>
+    
+                                                <span class="text-success">
+                                                    +9.0%
+                                                    <span class="ti-arrow-up"></span>
+                                                </span>
+                                            </div>
+                                            <!-- End Chart with Info - Chart -->
+                                        </div>
+                                        <!-- End Chart with Info -->
+                                    </div>
+                                    <!-- End Card Body -->
+                                </div>
+                                <!-- End Card -->
+                            </div>
+    
+                            <div class="col-sm-6 col-xl-3 mb-5">
+                                <!-- Card -->
+                                <div class="card">
+                                    <!-- Card Body -->
+                                    <div class="card-body">
+                                        <!-- Chart with Info -->
+                                        <div class="media align-items-center py-2">
+                                            <!-- Chart with Info - Info -->
+                                            <div class="media-body">
+                                                <h5 class="h5 text-muted mb-2">New clients</h5>
+                                                <span class="h2 font-weight-normal mb-0">484</span>
+                                            </div>
+                                            <!-- End Chart with Info - Info -->
+    
+                                            <!-- Chart with Info - Chart -->
+                                            <div class="text-right ml-2" style="max-width: 70px;">
+                                                <div class="mb-2"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                                                    <canvas class="js-area-chart-small chartjs-render-monitor initialized" width="70" height="14" data-extend="[{
+                                                                        &quot;data&quot;: [80, 100, 50, 50, 0, 60, 60, 100, 80],
+                                      &quot;borderColor&quot;: &quot;#f12559&quot;
+                                                                    }]" style="display: block; width: 70px; height: 14px;"></canvas>
+                                                </div>
+    
+                                                <span class="text-danger">
+                                                    -4.2%
+                                                    <span class="ti-arrow-down"></span>
+                                                </span>
+                                            </div>
+                                            <!-- End Chart with Info - Chart -->
+                                        </div>
+                                        <!-- End Chart with Info -->
+                                    </div>
+                                    <!-- End Card Body -->
+                                </div>
+                                <!-- End Card -->
+                            </div>
+    
+                            <div class="col-sm-6 col-xl-3 mb-5">
+                                <!-- Card -->
+                                <div class="card">
+                                    <!-- Card Body -->
+                                    <div class="card-body">
+                                        <!-- Chart with Info -->
+                                        <div class="media align-items-center py-2">
+                                            <!-- Chart with Info - Info -->
+                                            <div class="media-body">
+                                                <h5 class="h5 text-muted mb-2">Total Income</h5>
+                                                <span class="h2 font-weight-normal mb-0">$36,900</span>
+                                            </div>
+                                            <!-- End Chart with Info - Info -->
+    
+                                            <!-- Chart with Info - Chart -->
+                                            <div class="text-right ml-2" style="max-width: 70px;">
+                                                <div class="mb-2"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                                                    <canvas class="js-area-chart-small chartjs-render-monitor initialized" width="70" height="14" data-extend="[{
+                                                                        &quot;data&quot;: [80, 100, 50, 50, 0, 60, 60, 100, 80],
+                                      &quot;borderColor&quot;: &quot;#f1be25&quot;
+                                                                    }]" style="display: block; width: 70px; height: 14px;"></canvas>
+                                                </div>
+    
+                                                <span class="text-success">
+                                                    +6.2%
+                                                    <span class="ti-arrow-up"></span>
+                                                </span>
+                                            </div>
+                                            <!-- End Chart with Info - Chart -->
+                                        </div>
+                                        <!-- End Chart with Info -->
+                                    </div>
+                                    <!-- End Card Body -->
+                                </div>
+                                <!-- End Card -->
+                            </div>
+                        </div>
+                        <!-- End Doughnut Chart -->
+    
+                        <div class="row">
+                            <div class="col-md-6 mb-5">
+                                <!-- Revenue Chart -->
+                                <div class="card h-100">
+                                    <!-- Card Header -->
+                                    <header class="card-header d-flex align-items-center justify-content-between">
+                                        <h2 class="h4 card-header-title">Revenue</h2>
+    
+                                        <!-- Card Icons -->
+                                        <ul class="list-inline mb-0">
+                                            <li class="list-inline-item dropdown">
+                                                <a id="revenueMenuInvoker" class="u-icon-sm link-muted" href="#" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" data-offset="8">
+                                                    <span class="ti-more"></span>
+                                                </a>
+    
+                                                <!-- Card Menu -->
+                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="revenueMenuInvoker" style="width: 150px;">
+                                                    <div class="card border-0 p-3">
+                                                        <ul class="list-unstyled mb-0">
+                                                            <li class="mb-3">
+                                                                <a class="d-block link-dark" href="#">Add</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="d-block link-dark" href="#">Remove</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- Card Menu -->
+                                            </li>
+                                        </ul>
+                                        <!-- End Card Icons -->
+                                    </header>
+                                    <!-- End Card Header -->
+    
+                                    <!-- Card Body -->
+                                    <div class="card-body pt-0">
+                                        <!-- Chart Legends -->
+                                        <ul class="list-inline mb-4">
+                                            <li class="list-inline-item d-inline-flex align-items-center mr-4">
+                                                <span class="u-indicator u-indicator-xxs position-static bg-primary border-0 mr-2"></span>
+                                                Revenue
+                                            </li>
+                                            <li class="list-inline-item d-inline-flex align-items-center mr-4">
+                                                <span class="u-indicator u-indicator-xxs position-static bg-success border-0 mr-2"></span>
+                                                Profit
+                                            </li>
+                                        </ul>
+                                        <!-- End Chart Legends -->
+    
+                                        <!-- Chart -->
+                                        <div class="mx-n3" style="height: 340px;"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                                            <canvas class="js-area-chart chartjs-render-monitor initialized" width="488" height="340" style="display: block; width: 488px; height: 340px;"></canvas>
+                                        </div>
+                                        <!-- End Chart -->
+                                    </div>
+                                    <!-- End Card Body -->
+                                </div>
+                                <!-- End Revenue Chart -->
+                            </div>
+    
+                            <div class="col-md-6 mb-5">
+                                <!-- Performance Chart -->
+                                <div class="card h-100">
+                                    <!-- Card Header -->
+                                    <header class="card-header d-flex align-items-center justify-content-between">
+                                        <h2 class="h4 card-header-title">Performance</h2>
+    
+                                        <!-- Card Icons -->
+                                        <ul class="list-inline mb-0">
+                                            <li class="list-inline-item dropdown">
+                                                <a id="performanceMenuInvoker" class="u-icon-sm link-muted" href="#" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" data-offset="8">
+                                                    <span class="ti-more"></span>
+                                                </a>
+    
+                                                <!-- Card Menu -->
+                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="performanceMenuInvoker" style="width: 150px;">
+                                                    <div class="card border-0 p-3">
+                                                        <ul class="list-unstyled mb-0">
+                                                            <li class="mb-3">
+                                                                <a class="d-block link-dark" href="#">Add</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="d-block link-dark" href="#">Remove</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- Card Menu -->
+                                            </li>
+                                        </ul>
+                                        <!-- End Card Icons -->
+                                    </header>
+                                    <!-- End Card Header -->
+    
+                                    <!-- Card Body -->
+                                    <div class="card-body">
+                                        <!-- Chart -->
+                                        <div class="mx-auto mb-6" style="max-width: 240px; max-height: 240px;"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                                            <canvas class="js-doughnut-chart chartjs-render-monitor initialized" width="240" height="240" style="display: block;"></canvas>
+                                        </div>
+                                        <!-- End Chart -->
+    
+                                        <!-- Chart Legends -->
+                                        <ul class="list-inline d-flex align-items-center justify-content-center text-center mb-0">
+                                            <li class="list-inline-item px-5 mr-0">
+                                                <div class="h2 font-weight-normal text-primary mb-1">45%</div>
+                                                <div class="text-muted">Total Sales</div>
+                                            </li>
+                                            <li class="list-inline-item px-5 mr-0">
+                                                <div class="h2 font-weight-normal text-info mb-1">15%</div>
+                                                <div class="text-muted">New Customers</div>
+                                            </li>
+                                            <li class="list-inline-item px-5 mr-0">
+                                                <div class="h2 font-weight-normal text-success mb-1">15%</div>
+                                                <div class="text-muted">Conversion</div>
+                                            </li>
+                                        </ul>
+                                        <!-- End Chart Legends -->
+                                    </div>
+                                    <!-- End Card Body -->
+                                </div>
+                                <!-- End Performance Chart -->
+                            </div>
+    
+                            <div class="col-md-6 mb-5 mb-md-0">
+                                <!-- Active Tasks -->
+                                <div class="card h-100">
+                                    <!-- Card Header -->
+                                    <header class="card-header d-flex align-items-center justify-content-between">
+                                        <h2 class="h4 card-header-title">Active Tasks</h2>
+    
+                                        <!-- Card Icons -->
+                                        <ul class="list-inline mb-0">
+                                            <li class="list-inline-item dropdown">
+                                                <a id="activeTaMenuInvoker" class="u-icon-sm link-muted" href="#" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" data-offset="8">
+                                                    <span class="ti-more"></span>
+                                                </a>
+    
+                                                <!-- Card Menu -->
+                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="activeTaMenuInvoker" style="width: 150px;">
+                                                    <div class="card border-0 p-3">
+                                                        <ul class="list-unstyled mb-0">
+                                                            <li class="mb-3">
+                                                                <a class="d-block link-dark" href="#">Add</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="d-block link-dark" href="#">Remove</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- Card Menu -->
+                                            </li>
+                                        </ul>
+                                        <!-- End Card Icons -->
+                                    </header>
+                                    <!-- End Card Header -->
+    
+                                    <!-- Card Body -->
+                                    <div class="card-body py-0">
+                                        <div class="list-group list-group-flush">
+                                            <!-- Task -->
+                                            <div class="list-group-item border-0 px-0">
+                                                <div class="media align-items-center">
+                                                    <!-- Task Checkbox -->
+                                                    <span class="custom-control custom-checkbox custom-checkbox-bordered custom-checkbox-empty mr-4">
+                                                        <input id="exampleInputTask1Check" class="custom-control-input" type="checkbox">
+                                                        <label class="custom-control-label" for="exampleInputTask1Check"></label>
+                                                    </span>
+                                                    <!-- End Task Checkbox -->
+    
+                                                    <div class="u-icon rounded-circle bg-danger text-white mr-3">
+                                                        <span class="ti-dribbble"></span>
+                                                    </div>
+    
+                                                    <div class="media-body">
+                                                        <h4 class="font-weight-normal mb-0">Direct Mail Advertising How</h4>
+                                                        <small class="text-muted">
+                                                            Due to:
+                                                            <span class="font-weight-semi-bold">05 Sep 2018</span>
+                                                        </small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Task -->
+    
+                                            <!-- Task -->
+                                            <div class="list-group-item border-0 px-0">
+                                                <div class="media align-items-center">
+                                                    <!-- Task Checkbox -->
+                                                    <span class="custom-control custom-checkbox custom-checkbox-bordered custom-checkbox-empty mr-4">
+                                                        <input id="exampleInputTask2Check" class="custom-control-input" type="checkbox" checked="">
+                                                        <label class="custom-control-label" for="exampleInputTask2Check"></label>
+                                                    </span>
+                                                    <!-- End Task Checkbox -->
+    
+                                                    <div class="u-icon rounded-circle bg-info text-white mr-3">
+                                                        <span class="ti-twitter-alt"></span>
+                                                    </div>
+    
+                                                    <div class="media-body">
+                                                        <h4 class="font-weight-normal mb-0">Advertising On A Budget Part 3 Frequency</h4>
+                                                        <small class="text-muted">
+                                                            Due to:
+                                                            <span class="font-weight-semi-bold">30 Jun 2018</span>
+                                                        </small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Task -->
+    
+                                            <!-- Task -->
+                                            <div class="list-group-item border-0 px-0">
+                                                <div class="media align-items-center">
+                                                    <!-- Task Checkbox -->
+                                                    <span class="custom-control custom-checkbox custom-checkbox-bordered custom-checkbox-empty mr-4">
+                                                        <input id="exampleInputTask3Check" class="custom-control-input" type="checkbox" checked="">
+                                                        <label class="custom-control-label" for="exampleInputTask3Check"></label>
+                                                    </span>
+                                                    <!-- End Task Checkbox -->
+    
+                                                    <div class="u-icon rounded-circle bg-success text-white mr-3">
+                                                        <span class="ti-soundcloud"></span>
+                                                    </div>
+    
+                                                    <div class="media-body">
+                                                        <h4 class="font-weight-normal mb-0">Why Do You Need To Join An Affiliate Marketing Network</h4>
+                                                        <small class="text-muted">
+                                                            Due to:
+                                                            <span class="font-weight-semi-bold">02 Dec 2018</span>
+                                                        </small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Task -->
+    
+                                            <!-- Task -->
+                                            <div class="list-group-item border-0 px-0">
+                                                <div class="media align-items-center">
+                                                    <!-- Task Checkbox -->
+                                                    <span class="custom-control custom-checkbox custom-checkbox-bordered custom-checkbox-empty mr-4">
+                                                        <input id="exampleInputTask4Check" class="custom-control-input" type="checkbox">
+                                                        <label class="custom-control-label" for="exampleInputTask4Check"></label>
+                                                    </span>
+                                                    <!-- End Task Checkbox -->
+    
+                                                    <div class="u-icon rounded-circle bg-primary text-white mr-3">
+                                                        <span class="ti-facebook"></span>
+                                                    </div>
+    
+                                                    <div class="media-body">
+                                                        <h4 class="font-weight-normal mb-0">Deciphering Marketing Lingo For Small Business</h4>
+                                                        <small class="text-muted">
+                                                            Due to:
+                                                            <span class="font-weight-semi-bold">11 Mar 2018</span>
+                                                        </small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Task -->
+    
+                                            <!-- Task -->
+                                            <div class="list-group-item border-0 px-0">
+                                                <div class="media align-items-center">
+                                                    <!-- Task Checkbox -->
+                                                    <span class="custom-control custom-checkbox custom-checkbox-bordered custom-checkbox-empty mr-4">
+                                                        <input id="exampleInputTask5Check" class="custom-control-input" type="checkbox">
+                                                        <label class="custom-control-label" for="exampleInputTask5Check"></label>
+                                                    </span>
+                                                    <!-- End Task Checkbox -->
+    
+                                                    <div class="u-icon rounded-circle bg-danger text-white mr-3">
+                                                        <span class="ti-pinterest"></span>
+                                                    </div>
+    
+                                                    <div class="media-body">
+                                                        <h4 class="font-weight-normal mb-0">Using Banner Stands To Increase Trade</h4>
+                                                        <small class="text-muted">
+                                                            Due to:
+                                                            <span class="font-weight-semi-bold">22 Feb 2018</span>
+                                                        </small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Task -->
+                                        </div>
+                                    </div>
+                                    <!-- End Card Body -->
+    
+                                    <!-- Card Footer -->
+                                    <footer class="card-footer border-0">
+                                        <a class="font-weight-semi-bold" href="#">All tasks</a>
+                                    </footer>
+                                    <!-- End Card Footer -->
+                                </div>
+                                <!-- End Active Tasks -->
+                            </div>
+    
+                            <div class="col-md-6">
+                                <!-- Recent Activity -->
+                                <div class="card h-100">
+                                    <!-- Card Header -->
+                                    <header class="card-header d-flex align-items-center justify-content-between">
+                                        <h2 class="h4 card-header-title">Recent Activity</h2>
+                                        <span class="text-muted">25 updates</span>
+                                    </header>
+                                    <!-- End Card Header -->
+    
+                                    <!-- Card Body -->
+                                    <div class="card-body p-0">
+                                        <div class="table-responsive">
+                        <table class="card-table">
+                          <thead>
+                            <tr class="small">
+                              <th class="font-weight-normal text-muted pb-3">Name</th>
+                              <th class="font-weight-normal text-muted pb-3">Type</th>
+                              <th class="font-weight-normal text-muted pb-3">Net</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="py-3">
+                                                                <div class="media align-items-center">
+                                                                    <div class="u-icon rounded-circle bg-primary text-white mr-3">
+                                                                        <span class="ti-dropbox"></span>
+                                                                    </div>
+    
+                                                                    <div class="media-body">
+                                                                        <h4 class="font-weight-normal mb-0">Dropbox</h4>
+                                                                        <small class="text-muted">1 hour ago</small>
+                                                                    </div>
+                                                                </div>
+                              </td>
+                              <td class="py-3">Preapproved payment</td>
+                              <td class="py-3">-7.99 EUR</td>
+                            </tr>
+                            <tr>
+                              <td class="py-3">
+                                                                <div class="media align-items-center">
+                                                                    <div class="u-icon rounded-circle bg-secondary text-white mr-3">
+                                                                        <span class="ti-github"></span>
+                                                                    </div>
+    
+                                                                    <div class="media-body">
+                                                                        <h4 class="font-weight-normal mb-0">Github</h4>
+                                                                        <small class="text-muted">2 hour ago</small>
+                                                                    </div>
+                                                                </div>
+                              </td>
+                              <td class="py-3">Refund</td>
+                              <td class="py-3">+8.99 EUR</td>
+                            </tr>
+                            <tr>
+                              <td class="py-3">
+                                                                <div class="media align-items-center">
+                                                                    <div class="u-icon rounded-circle bg-danger text-white mr-3">
+                                                                        <span class="ti-trello"></span>
+                                                                    </div>
+    
+                                                                    <div class="media-body">
+                                                                        <h4 class="font-weight-normal mb-0">Trello</h4>
+                                                                        <small class="text-muted">15 minute ago</small>
+                                                                    </div>
+                                                                </div>
+                              </td>
+                              <td class="py-3">Payment</td>
+                              <td class="py-3">-14.5 EUR</td>
+                            </tr>
+                            <tr>
+                              <td class="py-3">
+                                                                <div class="media align-items-center">
+                                                                    <div class="u-icon rounded-circle bg-info text-white mr-3">
+                                                                        <span class="ti-twitter"></span>
+                                                                    </div>
+    
+                                                                    <div class="media-body">
+                                                                        <h4 class="font-weight-normal mb-0">Twitter</h4>
+                                                                        <small class="text-muted">30 minute ago</small>
+                                                                    </div>
+                                                                </div>
+                              </td>
+                              <td class="py-3">Approved payment</td>
+                              <td class="py-3">-4.99 EUR</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                                    </div>
+                                    <!-- End Card Body -->
+    
+                                    <!-- Card Footer -->
+                                    <footer class="card-footer border-0">
+                                        <a class="font-weight-semi-bold" href="#">All activities</a>
+                                    </footer>
+                                    <!-- End Card Footer -->
+                                </div>
+                                <!-- End Recent Activity -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Content Body -->
+    
+                    <!-- Footer -->
+                    <footer class="u-footer d-md-flex align-items-md-center text-center text-md-left text-muted">
+                        <!-- Footer Menu -->
+                        <ul class="list-inline mb-3 mb-md-0">
+                            <li class="list-inline-item mr-4">
+                                <a class="text-muted" href="#" target="_blank">About YunusBinKhalid</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="text-muted" href="../../index.html" target="_blank">More Freebies</a>
+                            </li>
+                        </ul>
+                        <!-- End Footer Menu -->
+    
+                        <!-- Copyright -->
+                        <span class="text-muted ml-auto">© 2019 <a class="text-muted" href="../../index.html" target="_blank">YunusBinKhalid</a>. All Rights Reserved.</span>
+                        <!-- End Copyright -->
+                    </footer>
+                    <!-- End Footer -->
+                </div>
+            </div>
+    </div>
+    </main>
+</body>
+</html>
